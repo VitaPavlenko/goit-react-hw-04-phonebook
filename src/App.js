@@ -3,7 +3,7 @@ import ContactForm from './Components/ContactForm/ContactForm';
 import Filter from './Components/Filter/Filter';
 import ContactList from './Components/ContactList/ContactList';
 import { useEffect, useState } from 'react';
-import { nanoid } from 'nanoid';
+// import { nanoid } from 'nanoid';
 export default function App() {
   // state = {
   //   contacts: [
@@ -85,7 +85,7 @@ export default function App() {
       <h2>Contacts</h2>
       <Filter filter={filter} handleFilter={handleFilter} />
       <ContactList
-        contact={contact}
+        contact={contacts}
         filter={filter}
         deletaClick={deletaClick}
       />
