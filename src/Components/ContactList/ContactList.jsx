@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-const ContactList = ({ contacts, filter, deletaClick }) => (
+const ContactList = ({ contact, filter, deletaClick }) => (
   <ul>
-    {contacts.map(
+    {contact.map(
       ({ id, name, number }) =>
         name.toLowerCase().includes(filter.toLowerCase()) && (
           <li key={id}>
